@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const box = document.querySelector('.box');
-    const box2 = document.querySelector('.box2');
+    const boxes = document.querySelectorAll('.box');
+    const boxes2 = document.querySelectorAll('.box2');
 
-    if (box) observer.observe(box);
-    if (box2) observer.observe(box2);
+    boxes.forEach(box => observer.observe(box));
+    boxes2.forEach(box => observer.observe(box));
 });
