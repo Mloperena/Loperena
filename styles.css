@@ -137,3 +137,63 @@ img {
         opacity: 1;
     }
 }
+.timeline {
+  border-left: 4px solid #333;
+  margin: 40px;
+  padding-left: 30px;
+  color: rgb(153, 143, 84);
+}
+
+.event {
+  margin-bottom: 40px;
+  position: relative;
+  color: rgb(153, 143, 84)
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #333;
+  border-radius: 50%;
+  color: rgb(153, 143, 84);
+}
+.box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: translateY(-10px); /* Lifts the box up slightly */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Adds a soft shadow */
+  border: 3px solid rgb(148, 136, 66); /* Optional: adds a thin gold edge on hover */
+}
+.box2 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.box2:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5); 
+  border: 3px solid rgb(141, 130, 69);} 
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: gold;
+}
