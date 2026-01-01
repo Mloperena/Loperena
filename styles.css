@@ -68,25 +68,7 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 50px;
-    }
 
-    img {
-        width: 300px;
-    }
-
-    .box,
-    .box2 {
-        margin-top: 30px;
-        padding: 15px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-}
 
 .box2 {
     background-color: #89ac7f;
@@ -235,9 +217,49 @@ h1 {
     margin-bottom: 20px;
     font-size: 75px;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-.crest3{
-   
+
+.crest3 {
+    text-align: center;
+}
+
+.crest {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(69, 78, 30);
+    text-align: center;
+    margin-right: 250px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    body {
+        border-width: 15px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .box,
+    .box2 {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
